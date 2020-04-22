@@ -1,0 +1,237 @@
+.header {
+	min-height: 367px;
+	background: #899198;
+}
+
+.header__row {
+	padding-top: 35px;
+	height: 200px;
+	background: url(../icon/line.png) 500px 60px no-repeat;
+}
+
+.header__block {}
+
+.header__title span {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 71px;
+	color: #C3C3C3;
+	margin-right: -15px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header__title{
+	padding-left: 85px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 71px;
+	color: #525E69;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__sub-title {
+	padding-left: 290px;
+	margin-top: -15px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 40px;
+	color: #525E69;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.header__line {
+
+}
+
+.header__logo-block:last-child{
+	background: url(../icon/line.png) 0 0 no-repeat;
+}
+
+.main__header-row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.main__header-block {}
+
+.header__logo {}
+
+.header__text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 61px;
+	max-width: 644px;
+	color: #525E69;
+}
+
+.header__contact {}
+
+.header__contact p{
+	font-family: Michroma;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 34px;
+	position: relative;
+	color: #525E69;
+}
+.header__contact p:last-child{
+	margin-top: 10px;
+}
+.header__contact p:before{
+	content: "";
+	position: absolute;
+	background: url(../icon/mail.png) 0 0 no-repeat;
+	width: 40px;
+	height: 40px;
+	left: -50px;
+	top: 5px;
+}
+.header__contact p:first-child:before{
+	content: "";
+	position: absolute;
+	background: url(../icon/phone.png) 0 0 no-repeat;
+}
+
+.bg {
+	margin-top: 7px;
+	min-height: 771px;
+	background: url(../img/bg_header.png) 0 0 / cover no-repeat;
+}
+
+.bg__title {
+	font-family: Vollkorn;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 67px;
+	max-width: 450px;
+	color: #899198;
+	padding-left: 90px;
+	padding-top: 300px;
+}
+
+
+@media(max-width: 1024px) {
+	.bg{
+		background: url(../img/bg_header.png) -200px 0 / cover no-repeat;
+	}
+	.header__title{
+		padding-left: 50px;
+	}
+	.header__sub-title{
+		padding-left: 255px;
+		padding-top: 10px;
+	}
+	.header__text{
+		font-size: 35px;
+		max-width: 500px;	
+	}
+	.header__logo{
+		padding-left: 10px;
+	}
+	.header__contact{
+		padding-right: 15px;
+	}
+}
+@media(max-width: 957px) {
+	.main__header-row{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.header__text{
+		max-width: 900px;
+	}
+	.header__contact{
+		padding-bottom: 25px;
+	}
+}
+@media(max-width: 780px) {
+	.bg__title{
+		padding-top: 0;
+		color: #686E73;
+	}
+	.bg{
+		background: url(../img/bg_header.png) -440px 0 / cover no-repeat;
+	}
+}
+@media(max-width: 768px) {}
+@media(max-width: 560px) {
+	.header__text{
+		padding-left: 20px;
+	}
+}
+@media(max-width: 551px) {
+	.bg__title{
+		font-size: 35px;
+		line-height: 50px;
+		max-width: 400px;
+	}
+	.bg{
+		background: url(../img/bg_header.png) -550px 0 / cover no-repeat;
+	}
+}
+@media(max-width: 480px) {
+	.header__logo{
+		margin-bottom: 30px;
+	}
+	.header__text{
+		margin-bottom: 20px;
+	}
+	.main__header-row{
+		display: block;
+	}
+	.header__title{
+		padding-left: 10px;
+	}
+	.header__sub-title{
+		padding-left: 10px;
+	}
+	.header__contact{
+		padding-left: 60px;
+	}
+}
+@media(max-width: 440px) {
+	.bg{
+		background: url(../img/bg_header.png) -640px 0 / cover no-repeat;
+	}
+	.bg__title{
+		padding-left: 40px;
+	}
+}
+@media(max-width: 382px) {
+	.header__title{
+		font-size: 45px;
+	}
+	.header__title span{
+		font-size: 45px;
+		margin-right: 0;
+	}
+	.header__sub-title{
+		font-size: 35px;
+	}
+}
+@media(max-width: 346px){
+	.bg__title{
+		padding-left: 20px;
+	}
+}
+@media(max-width: 330px) {
+	.header__text{
+		font-size: 30px;
+	}
+}
